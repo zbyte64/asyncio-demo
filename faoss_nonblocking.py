@@ -4,13 +4,7 @@ from foaas import fuck as frack
 from functools import partial
 
 
-#route handlers are just async functions that deal with aiohttp.web objects
-async def hello(request):
-    return web.Response(body=b"Hello, world")
-
-
 app = web.Application()
-app.router.add_route('GET', '/', hello)
 
 
 async def frack_adaptor(action, request):
