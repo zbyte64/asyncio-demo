@@ -12,7 +12,7 @@ from nltk.tokenize import wordpunct_tokenize
 stemmer = EnglishStemmer()
 
 stop_words = set(stopwords.words('english'))
-stop_words.update(['.', ',', '"', "'", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}']) # remove it if you need punctuation
+stop_words.update(['.', ',', '"', "'", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}']) # remove punctuation
 
 
 async def philosophical_response_maker(route, action_stem, words):
