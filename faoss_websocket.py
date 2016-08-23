@@ -1,3 +1,7 @@
+'''
+Serves up a minimal chat bot over websocket.
+Responses are from faoss.
+'''
 import aiohttp
 from aiohttp import web
 import os
@@ -33,9 +37,10 @@ async def chatbot(request):
 
 
 app.router.add_route('GET', '/chat', chatbot)
+
 assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets')
 app.router.add_static('/', assets_path)
-print(assets_path)
+
 
 if __name__ == '__main__':
     web.run_app(app)

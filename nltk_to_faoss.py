@@ -1,3 +1,6 @@
+'''
+Searches for words matching foaas actions and uses the other words as arguments for the matched action.
+'''
 from functools import partial
 import aiohttp
 from foaas import fuck as frack
