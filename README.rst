@@ -5,6 +5,6 @@ In order of simplicity:
 
 1. fib_loop.py
 2. aiohttp_hello.py
-3. foass_blocking.py
-4. foass_nonblocking.py
-5. foass_websocket.py
+3. foaas_blocking.py
+4. foaas_nonblocking.py
+5. foaas_websocket.py

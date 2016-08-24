@@ -6,7 +6,7 @@ import aiohttp
 from aiohttp import web
 import os
 
-from nltk_to_faoss import respond_to_line
+from nltk_to_foaas import respond_to_line
 
 
 app = web.Application()
